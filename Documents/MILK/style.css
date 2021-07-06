@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*
+{
+margin:0 0 0 0;
+padding: 0 0 0 0;
+}
+
+
+body{
+  overflow-x: hidden;
+  position: absolute;
+  
+}
+
+html{
+  overflow-x: hidden;
+}
+
+.webgl{
+  position: absolute;
+  top:0;
+  left:0;
+  outline: none;
+  z-index: -1;
+}
+
+.container-first-page{
+  height: 100vh;
+	z-index: 100;
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  font-size: 200%;
+  
+}
+.container-first-page span{
+  z-index: 100;
+  text-decoration: underline;
+}
+
+
+
+.menu{
+  z-index: 100;
+  display: flex;
+  font-family: 'Bebas Neue', cursive;
+  list-style: none;
+  font-size: 250%;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin: 0 10% 0 10%;
+}
+
+.menu span{
+  font-size: 50%;
+}
+
+.about-us{
+  cursor: pointer;
+}
+.buy{
+  cursor: pointer;
+}
+.logo{
+  cursor: default;
+}
+
+.container-second-page{
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: white;
+}
+
+.cow_image{
+  width: 50%;
+  padding-top: 5%;
+}
+
+.cow_image img{
+  padding-top: 0%;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.information-second-page{
+  font-family: 'Bebas Neue', cursive;
+  width: 50%;
+  color: black;
+}
+
+.information-second-page h1{
+  font-size: 350%;
+}
+.information-second-page p{
+  padding-right: 10%;
+  font-size: 150%;
+}
+
+.container-third-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container{
+  margin: 0 auto 0 auto;
+  width: 60%;
+  height: 80%;
+  background-color: red;
+  display: flex;
+  border: solid black 5px;
+}
+
+.card-info{
+  width: 30%;
+}
+
+.card-image{
+  width: 70%;
+  height: 100%;
+}
+
+.card-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-info-white{
+  background-color: red;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-info-white button{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 300%;
+  border-radius: 2rem;
+  background-color: red;
+  color: white;
+  padding: 0 1rem 0 1rem;
+  align-items: center;
+  box-shadow: 5px 10px black;
+  cursor: pointer;
+}
+
+.card-info-white button:hover{
+  background-color: rgb(255, 64, 64);
+  color: yellow;
+  border: yellow;
+  cursor: pointer;
+}
+
+.card-info-red{
+  font-family: 'Bebas Neue', cursive;
+  height: 70%;
+  width: 100%;
+}
+
+.card-info h1{
+  color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.final-price{
+  font-size:300%;
+}
+
+#discount{
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  10% { color: rgb(255, 0, 255); }
+  50% { color: rgb(0, 255, 234); }
+  100% { color: rgb(9, 255, 0); }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  canvas{
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .container-third-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-container{
+    margin: 0 auto 0 auto;
+    width: 60%;
+    height: 80%;
+    background-color: red;
+    display: flex;
+    border: solid black 5px;
+  }
+  
+  .card-info{
+    width: 30%;
+  }
+  
+  .card-image{
+    width: 70%;
+    height: auto;
+  }
+  
+  .card-image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-info-white{
+    background-color: red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-info-white button{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200%;
+    border-radius: 2rem;
+    background-color: red;
+    color: white;
+    padding: 0 1rem 0 1rem;
+    align-items: center;
+    box-shadow: 5px 10px black;
+    cursor: pointer;
+  }
+  
+  .card-info-white button:hover{
+    background-color: rgb(255, 64, 64);
+    color: yellow;
+    border: yellow;
+    cursor: pointer;
+  }
+  
+  .card-info-red{
+    font-family: 'Bebas Neue', cursive;
+    height: 70%;
+    width: 100%;
+  }
+  
+  .card-info h1{
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150%;
+  }
+  
+  .final-price{
+    font-size:200%;
+  }
+  
+  #discount{
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    10% { color: rgb(255, 0, 255); }
+    50% { color: rgb(0, 255, 234); }
+    100% { color: rgb(9, 255, 0); }
+  }
+  
+}
+
+@media (max-width: 700px) {
+
+  .container-second-page{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: left;
+    padding-bottom: 10%;
+  }
+
+  .cow_image{
+    width: 100%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+  }
+  
+  .cow_image img{
+    padding-top: 0%;
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .information-second-page{
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    color: black;
+    padding: 0 0 0 10%;
+  }
+  
+  .information-second-page h1{
+    font-size: 350%;
+  }
+  .information-second-page p{
+    padding-right: 10%;
+    font-size: 150%;
+  }
+
+  .container-third-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+  }
+  
+  .card-container{
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+    border: solid black 5px;
+  }
+  
+  .card-info{
+    width: 100%;
+  }
+  
+  .card-image{
+    width: 100%;
+    height: 55%;
+  }
+  
+  .card-image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-info-white{
+    background-color: red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-info-white button{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 300%;
+    border-radius: 2rem;
+    background-color: red;
+    color: white;
+    padding: 0 1rem 0 1rem;
+    align-items: center;
+    box-shadow: 5px 10px black;
+    cursor: pointer;
+  }
+  
+  .card-info-white button:hover{
+    background-color: rgb(255, 64, 64);
+    color: yellow;
+    border: yellow;
+    cursor: pointer;
+  }
+  
+  .card-info-red{
+    font-family: 'Bebas Neue', cursive;
+    height: 70%;
+    width: 100%;
+  }
+  
+  .card-info h1{
+    color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .final-price{
+    font-size:300%;
+  }
+  
+  #discount{
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    10% { color: rgb(255, 0, 255); }
+    50% { color: rgb(0, 255, 234); }
+    100% { color: rgb(9, 255, 0); }
+  }
+  
+}
