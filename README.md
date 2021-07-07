@@ -6,7 +6,7 @@ The website and the milk carton model were created by me, so feel free to use th
 
 H̳o̳w̳ ̳t̳o̳ ̳s̳t̳a̳r̳t̳ ̳t̳h̳e̳ ̳p̳r̳o̳j̳e̳c̳t̳:<br>
 1.- Start by extracting the main folder<br>
-2.- Later open the MILK folder located inside the documents folder on VisualStudio<br>
+2.- Later open the MILK folder located inside the documents folder in VisualStudio<br>
 ![image](https://user-images.githubusercontent.com/58499363/124683213-1f7fe900-de92-11eb-9a0f-23fa0e93f0d1.png)<br>
 3.-Open a new terminal<br>
 4.-Run the npm install command<br>
